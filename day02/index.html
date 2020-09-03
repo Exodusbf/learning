@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button id="toggle">Включить</button>
+</br>
+<div id="contrastFilter">
+<img id="bulb" src="./bulbOn.png" hidden />
+<img id="bulbOff" src="./bulb.png" />
+</br>	
+    </div>
+</br>
+<input id="rangeScale" type="range" min="0" max="100" value="100" onchange="divChange(this);">
+</br>
+<style>
+#toggle {
+    width: 100px;
+    background: gray;
+    color: white;
+}
+#contrastFilter {  
+    width: 100px;
+    height: 80px;
+    opacity: 1;
+}
+#bulb {
+    width: 100px;
+    height: 100px;
+}
+#bulbOff {
+    width:100px;
+    height: 100px;
+}
+#rangeScale {
+    width:100px;
+}</style>
+<script>
+const bulbToggle = document.getElementById("toggle");
+bulbToggle.addEventListener("click", () => {
+    const bulb = document.getElementById("bulb");
+    if (bulb.hidden) {
+        bulb.hidden = false;
+	bulbOff.hidden = true;       
+	bulbToggle.innerText = "Выключить";
+    } else {
+        bulb.hidden = true;
+        bulbOff.hidden = false;
+	bulbToggle.innerText = "Включить";	
+}
+});
+let div = document.getElementsByTagName('div')[0];	function divChange(ths)
+	    {
+	    div.style.opacity = ths.value / 100;
+	    }
+</script>
+</body>
+</html>
