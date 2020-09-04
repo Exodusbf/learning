@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework</title>
 </head>
+
 <body>
-    
+    <script>
+        let a = 1, b = 1;
+        let c = ++a; //Значение с будет равно 2, тк у нас префиксный инкремент
+        let d = b++; //В данном случае значение d будет равно 1, тк постфиксный инкримент возвращает старое значение b (1)
+        alert(a); //Значение a будет равно 2, тк производя инкрементацию над  переменной а мы перезаписываем значение самой переменной(насколько я правильно понял)
+        alert(b); //Смотри выше на 15 строку
+    </script>
 </body>
+
 </html>
