@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+
+<body>
+    <script>
+        let userAge = prompt("Сколько тебе лет?", 18);
+        alert(`Тебе ${userAge} лет!`);
+        let questionAboutLies = confirm(`Небойсь соврал про свои ${userAge} лет?`);
+        if (questionAboutLies) {
+            questionAboutLies = true;
+            alert("Врунишка, иди собирай портфель");
+        } else {
+            questionAboutLies = false;
+            alert("Так и быть поверю");
+        } // Понимаю что я забегаю вперед, но как можно было бы реализовать проверку userAge? ( если userAge < 18; - alert(1), если userAge >= 18 - alert(2)???)
+    </script>
+</body>
+
+</html>
