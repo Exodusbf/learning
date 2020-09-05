@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+
+<body>
+    <script>
+        if (-1 || 0) alert( 'first' ); //-1 и 0 ложные значения - вернет 0, сработает алерт и выдаст undefined. Ошибся - хотелось бы пояснения... UPD. разобрался  значения false для алерта:0, null, undefined, NaN, "";( -1 не ложное значение вот где заблуждение, перепрочел типы данных и преобразование типов) Тк у нас -1 алерт сработает ведь это аналог <<alert( true || false );  // true >>
+        if (-1 && 0) alert( 'second' ); //Не сработает - результат ложный. UPD - частный случай такого выражения <<( true && false );  // false>> 
+        if (null || -1 && 1) alert( 'third' ); //&& имеет больший приоритет - сперва производится действие -1 && 1 = false(-1 ???)....(false||false = false?) Срабатывает.Надо пояснение почему true.. вообще по этому примеру. UPD - смотри через строку выше - разобрался
+    </script>
+</body>
+
+</html>
