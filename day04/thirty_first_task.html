@@ -12,10 +12,10 @@
         let numRequest = prompt("Введите число", "");
         nextRound:
         for (let FirstNumInRange = 2; FirstNumInRange <= numRequest; FirstNumInRange++) {
-            for (SecondNumInRange = 2; SecondNumInRange < FirstNumInRange; SecondNumInRange++) { 
-            if (FirstNumInRange % SecondNumInRange == 0) continue nextRound;
+            for (SecondNumInRange = 2; SecondNumInRange < FirstNumInRange; SecondNumInRange++) {
+                if (FirstNumInRange % SecondNumInRange == 0) continue nextRound;
             }
-            alert (FirstNumInRange);
+            alert(FirstNumInRange);
         } 
     </script>
 </body>
