@@ -9,11 +9,14 @@
 
 <body>
     <script>
-        while (true) {
-            let numRequest = +prompt("Введите число", "");
-            if (numRequest >= 100) break;
-            else if (!numRequest) break;
-        }
+        let numRequest = prompt("Введите число", "");
+        nextRound:
+        for (let FirstNumInRange = 2; FirstNumInRange <= numRequest; FirstNumInRange++) {
+            for (SecondNumInRange = 2; SecondNumInRange < FirstNumInRange; SecondNumInRange++) { 
+            if (FirstNumInRange % SecondNumInRange == 0) continue nextRound;
+            }
+            alert (FirstNumInRange);
+        } 
     </script>
 </body>
 
