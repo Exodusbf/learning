@@ -9,21 +9,22 @@
 
 <body>
     <script>
-       let indificationQuestion = prompt("Кто там?", "");
-       if (indificationQuestion == "Админ") {
-           let passQuestion = prompt ("Пароль", "");
-           if (passQuestion == "Я главный") {
-               alert("Здравствуйте");
-           } else if (passQuestion == "" || passQuestion == null) {
-               alert("Отменено");
-           } else {
-               alert("Неверный пароль");
-           }
-       }    else if (indificationQuestion == "" || indificationQuestion == null) {
+        let indificationQuestion = prompt("Кто там?", "");
+        if (indificationQuestion == "Админ") {
+            let passQuestion = prompt("Пароль", "");
+            if (passQuestion == "Я главный") {
+                alert("Здравствуйте");
+            } else if (passQuestion == "" || passQuestion == null) {
                 alert("Отменено");
             } else {
-                alert("Я вас не знаю");
+                alert("Неверный пароль");
+            }
+        } else if (indificationQuestion == "" || indificationQuestion == null) {
+            alert("Отменено");
+        } else {
+            alert("Я вас не знаю");
         }
     </script>
 </body>
+
 </html>
