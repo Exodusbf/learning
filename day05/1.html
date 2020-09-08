@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let age = prompt("Сколько вам лет?","");
+        function checkAge(age) {
+            if (age > 18) {
+                return true;
+            } else {
+                // ...
+                return confirm('Родители разрешили?'); // Разницы с другим вариантом нет
+            }
+        }
+        checkAge();
+    </script>
+    <script>
+        let age2 = prompt("Сколько вам лет?","")
+        function checkAge(age2) {
+            if (age2 > 18) {
+                return true;
+            }
+            // ...
+            return confirm('Родители разрешили?'); // Разницы с другим вариантом нет
+        }
+        checkAge();
+    </script>
+</body>
+
+</html>
