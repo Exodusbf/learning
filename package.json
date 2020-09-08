@@ -1,0 +1,23 @@
+{
+  "name": "learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Exodusbf/learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Exodusbf/learning/issues"
+  },
+  "homepage": "https://github.com/Exodusbf/learning#readme",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-plugin-react": "^7.20.6"
+  }
+}
