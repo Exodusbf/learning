@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let calc = {
+
+            read() {
+                calc.firstValue = +prompt("Введите первое число", "");
+                calc.SecondValue = +prompt("Введите второе число", "");
+            },
+            sum() {
+                return this.firstValue + this.SecondValue;
+             }
+        };
+    
+        calc.read();
+        
+        alert(calc.sum());
+    
+    </script>
+</body>
+
+</html>
