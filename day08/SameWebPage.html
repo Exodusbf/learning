@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="1.css" rel="stylesheet">
+    <title>Same Web Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-navigation-bar">
+            <div class="left-side-nav-bar">left-side-nav-bar</div>
+            <div class="center-nav-search">center-nav-search
+                <input>
+                <button name="button">search</button>
+            </div>
+            <div class="right-side-nav-user-bar">right-side-nav-user-bar</div>
+        </div>
+        <div class="main-contetn-window">
+            <div class="left-side-nav-content">left-side-nav-content</div>
+            <div class="main-contetn">main-contetn</div>
+            <div class="right-side-chat">chat 
+            <div class="message">
+                <input class="message-input">
+                <button  class="message-button" name="send">
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height:100%;
+        }
+
+        .top-navigation-bar {
+            display: flex;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-top: 5px;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .main-contetn-window {
+            display: flex;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .left-side-nav-bar {
+            flex: 0 0 640px;
+        }
+
+        .center-nav-search {
+            flex: 1 1 0;
+        }
+
+        .right-side-nav-user-bar {
+            flex: 0 1 640px;
+        }
+
+        .left-side-nav-content {
+            flex: 0 0 240px;
+        }
+
+        .main-contetn {
+            flex: 1 1 0;
+        }
+
+        .right-side-chat {
+            flex: 0 1 300px;
+        }
+        .message {
+            display: flex;
+        }
+       .message-input {
+           flex: 1 1 0;
+           align-content: flex-end;
+        }
+        .message-button {
+            flex: 0 0 50px;
+            align-content: flex-end;
+        }
+    </style>
+</body>
+
+</html>
